@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.left-conten-right {
+			margin-bottom: 30px;
+		}
+		.left-conten-right div{
+			min-height: 80px;
+		}
+	
+		.left{
+			background-color: red;
+		}
+		.right{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<section class="float">
+		<style>
+			.float .left{
+				width: 300px;
+				float: left;
+			}
+			.float .right{
+				width: 300px;
+				float: right;
+			}
+			.float .conten{
+				background-color: #444;
+			}
+		</style>	
+		<article class="left-conten-right">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="conten">
+				<h1>这是浮动</h1>
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				<p>1.这是中间</p>
+				<p>1.这是中间</p>
+				<p>1.这是中间</p>
+			</div>
+		</article>
+	</section>
+	<section class="flex">
+		<style>
+			.flex .left-conten-right{
+				display: flex;
+			}
+			.flex .left{
+				width: 300px;
+			}
+			.flex .right{
+				width: 300px;
+
+			}
+			.flex .conten{
+				flex:1;
+				background-color: #999;
+			}
+		</style>	
+		<article class="left-conten-right">
+			<div class="left"></div>
+			<div class="conten">
+				<h1>这是flex</h1>
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				<!-- <p>1.这是中间</p>
+				<p>1.这是中间</p>
+				<p>1.这是中间</p> -->
+			</div>
+			<div class="right"></div>
+		</article>
+	</section>
+	<section class="table">
+		<style>
+			.table .left-conten-right{
+				width: 100%;
+				display: table;
+			}
+			.table .left-conten-right div{
+				display: table-cell;
+			}
+			.table .left{
+				width: 300px;
+			}
+			.table .right{
+				width: 300px;
+			}
+			.table .conten{
+				background-color: #999;
+			}
+		</style>	
+		<article class="left-conten-right">
+			<div class="left"></div>
+			<div class="conten">
+				<h1>这是table</h1>
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				<p>1.这是中间</p>
+				<p>1.这是中间</p>
+				<p>1.这是中间</p>
+			</div>
+			<div class="right"></div>
+		</article>
+	</section>
+	<section class="grid">
+		<style>
+			.grid .left-conten-right{
+				width: 100%;
+				display: grid;
+				-ms-grid-template-rows: 100px;
+				grid-template-rows: 100px;
+				grid-template-columns: 300px auto 300px;
+			}
+			.grid .left-conten-right div{
+				display: table-cell;
+			}
+			.grid .left{
+				width: 300px;
+			}
+			.grid .right{
+				width: 300px;
+			}
+			.grid .conten{
+				background-color: #999;
+			}
+		</style>	
+		<article class="left-conten-right">
+			<div class="left"></div>
+			<div class="conten">
+				<h1>这是grid</h1>
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				<p>1.这是中间</p>
+				<p>1.这是中间</p>
+				<p>1.这是中间</p>
+			</div>
+			<div class="right"></div>
+		</article>
+	</section>
+	<section class="absolute">
+		<style>
+			.absolute div{
+				position: absolute;
+				/*margin-top: 200px;*/
+			}
+			.absolute .left{
+				width: 300px;
+				left:0;
+			}
+			.absolute .right{
+				width: 300px;
+				position: absolute;
+				right: 0;
+			}
+			.absolute .conten{
+				background-color: #888;
+				left:300px;
+				right: 300px;
+			}
+		</style>	
+		<article class="left-conten-right">
+			<div class="left"></div>
+			<div class="conten">
+				<h1>这是定位</h1>
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				1.这是中间
+				<p>1.这是中间</p>
+				<p>1.这是中间</p>
+				<p>1.这是中间</p>
+			</div>
+			<div class="right"></div>
+		</article>
+	</section>
+</body>
+</html>
